@@ -1,0 +1,652 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+     overflow-x: hidden !important;
+}
+
+
+body {
+   margin: 30px;
+   box-sizing: border-box;
+   background: linear-gradient(135deg, #e78f92 0%, #fad0c4 100%);
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+/* HERO */
+header {
+    height: 60vh;
+}
+
+nav {
+    background-color: rgb(248, 156, 171);
+    transform: translateY(-25px);
+    padding: 20px;
+    z-index: 0;
+
+}
+
+.hero-1 .hero-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 20%px));
+}
+
+header h3 {
+    font-family: "Playfair", serif;
+    position: relative;
+    font-size: 1.3em;
+    transform: translate(28px, 25px);
+    z-index: 10000;
+}
+
+.hero-1 .hero-2 li {
+    list-style: none;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    transform: translateX(60px);
+    grid-template-columns: repeat(4, 10%) 0.4fr;
+}
+
+.hero-1 .hero-2 li a{
+     margin: 5px;
+     padding-bottom: 2px;
+}
+
+.hero-1 .hero-2 li a:hover  {
+     padding-bottom: 2px;
+     border-bottom: 1px solid black;
+}
+
+.hero-2 li a:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    transform: translateX(100px);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.black {
+    border-bottom: none !important;
+    background-color: palevioletred;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* ARTICLE */
+
+.hero {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.9fr;
+    height: 40vh;
+    place-items: center;
+}
+
+.experient-1 {
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experient-1 > * {
+    margin: 10px;
+}
+
+.experient-1 h2 {
+    font-size: 2em;
+    color: rgb(247, 132, 151);
+    text-shadow: 0.5px 1px 3px black;
+}
+
+.profile {
+    width: 98%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -25px;
+}
+
+.profile li:nth-child(1) {
+    background-color: rgb(247, 132, 151);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.profile li:nth-child(2) {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.profile li a {
+    font-weight: 600;
+}
+
+.profile li .kontak {
+    font-weight: 500;
+}
+
+.img {
+    width: 100%;
+    height: 40vh;
+}
+
+.img img {
+    background-size: cover;
+    width: 75%;
+    height: 45vh;
+    transform: translateX(-80px);
+    transform: translateY(-66px);
+}
+
+/* MAIN */
+main .pertama {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pertama h2 {
+    padding: 5px;
+    width: 111px;
+    border-bottom: 3px solid rgb(247, 132, 151);
+}
+
+.pertama img {
+    width: 40%;
+    height: 40vh;
+    transform:translateX(180px);
+}
+
+
+.pertama p {
+    width: 80%;
+    line-height: 28px;
+}
+
+.overview ul li {
+    list-style: square;
+}
+
+/* MY SKILL */
+
+.bagian-2 {
+    width: 100%;
+    height: 45vh;
+    display: grid;
+    place-items: center;
+}
+
+.my-skill {
+    width: 70%;
+    place-content: center;
+}
+
+.my-skill h2 {
+    color: rgb(247, 132, 151);
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.my-skill .ms-office li {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-bottom: 1px solid rgba( 0 , 0 , 0 , 0.5 );
+    border-top: 1px solid rgba( 0 , 0 , 0 , 0.5 );
+    justify-items: center;
+}
+
+.gambar-1 {
+    background-image: url('img/word.png');
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+
+.gambar-2 {
+    background-image: url('img/excel.png');
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+
+.gambar-3 {
+    background-image: url('img/pw.png');
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+/* EXPERIENCE */
+
+.bagian-3 {
+    height: 40vh;
+}
+
+.bagian-3 .experience {
+    margin: 50px 0 0 100px;
+    width: 70%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience h2 {
+    margin-bottom: 5px;
+    color: rgb(247, 132, 151);
+    font-size: 1.7em;
+}
+
+
+.kasir span {
+   background-image: url('img/kasir.png');
+   background-size: cover;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   transform: translate(-10px, 5px);
+}
+
+.casemix span {
+   background-image: url('img/rak.png');
+   background-size: cover;
+   display: inline-block;
+   width: 35px;
+   height: 35px;
+   transform: translate(-10px, 5px);
+   
+}
+
+.experience p {
+    margin-top: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(2, 50px);
+}
+
+footer h2 {
+    color: rgb(247, 132, 151);
+    font-size: 1.8em;
+}
+
+footer p {
+    font-weight: 550;
+}
+
+.follow {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 66vw;
+    border-top: 1px solid rgba( 0 , 0 , 0 , 0.5 );
+}
+
+.kontak-1 {
+    display: flex;
+    height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45vw;
+}
+
+.kontak-1 span:nth-child(1) {
+    background-image: url(img/gmail.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.kontak-1 span:nth-child(3) {
+    background-image: url(img/wa.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.kontak-1 span:nth-child(5) {
+    background-image: url(img/job.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.kontak-1 span {
+    width: 30px;
+    height: 30px;
+    transform: translateX(15px);
+}
+
+ .kontak-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo a {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+}
+
+.logo a:nth-child(1) {
+    background-image: url('img/tiktok.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.logo a:nth-child(2) {
+    background-image: url('img/instagram.png');
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+   .container {
+    width: 100%;
+   } 
+
+   .profile {
+    width: 110%;
+   }
+
+   .img img {
+    transform: translate(-8px, 10px);
+    width: 90%;
+    height: 30vh;
+
+   }
+
+   .hero-1 .hero-2 li {
+     transform: translateX(48px);
+   }
+
+   .hero-1 .hero-2 li a:nth-child(4) {
+     transform: translateX(15px);
+   }
+
+
+   .bagian-1 img {
+    width: 55%;
+    height: 40vh;
+    transform: translateX(75px);
+   }
+
+   .kontak-1 {
+    width: 80vw;
+   }
+
+   header h3 {
+    left: 50px;
+    top: 70px;
+   }
+
+   .hero-2 li a:nth-child(5) {
+    transform: translateX(50px);
+
+}
+   
+}
+
+
+@media (max-width: 600px) {
+
+    header h3 {
+        position: static;
+    }
+
+   .hero-1 {
+    display: none;
+   }
+
+
+   .hero {
+   grid-template-columns: 1.5fr;
+   place-content: center;
+   height: 20vh;
+   }
+
+   .hero img {
+    display: none;
+   }
+
+   .experient-1 {
+    order: 2;
+    width: 90%;
+   }
+
+   .pertama {
+    height: 80vh;
+   }
+
+   .pertama img {
+    width: 40%;
+    height: 30vh;
+   }
+
+   .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+
+   .bagian-2 {
+    height: 70vh;
+   }
+
+   .my-skill li {
+    height: 55vh;
+    gap: 20px;
+    place-content: center;
+   }
+
+   .bagian-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    transform: translateY(-30px);
+   }
+
+
+   .bagian-3 h2, h4{
+    text-align: center;
+   }
+   
+   .bagian-3 .experience {
+    margin: 0;
+    width: 89%;
+   }
+
+
+   .experience p {
+    margin-top: -10px;
+   }
+
+   .kontak-1 {
+    flex-direction: column;
+    height: 30vh;
+   }
+
+   .kontak-1 span {
+    transform: translate(-110px, 15px);
+   }
+
+   .kontak-1 a{
+    text-align: left;
+    transform: translateY(-26px);
+   }
+
+   footer {
+    text-align: center;
+   }
+
+   .kontak-1 a:nth-child(2) {
+    margin-left: 30px;
+   }
+
+   .kontak-1 a:nth-child(4) {
+    margin-left: -43px;
+   }
+
+   .kontak-1 a:nth-child(6) {
+    margin-left: -60px;
+   }
+
+   .follow {
+    flex-direction: column;
+   }
+
+   .burger {
+    display: block;
+    z-index: 10000;
+    position: absolute;
+    transform: translateX(30px);
+    display: block !important;
+    top: 60px;
+    right: 80px;
+   }
+
+   .black {
+    width: 40%;
+    text-align: center;
+   }
+
+   .samping {
+    display: flex !important;
+     z-index: 9999;
+     transition: all 0.4 ease;
+   }
+
+   .pertama img {
+    transform: translateX(100px);
+    width: 45%;
+    height: 40vh;
+   }
+
+
+}
+
+
+/* HAMBURGER */
+
+  .burger {
+        width: 30px;
+        height: 30px;
+        transform: translate(50px, -40px);
+        display: none;
+      }
+
+      .cek {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        z-index: 99999;
+      }
+
+      .burger span {
+        background-color: rgb(247, 132, 151);
+        outline: 1px solid black;
+        border-radius: 3px;
+        width: 100%;
+        margin: 5px;
+        height: 5px;
+        display: block;
+        transform: translate(-5px, 0);
+        transition: all 0.5s ease;
+      }
+
+      .burger input:checked ~ span:nth-child(2) {
+        transform: rotate(43deg);
+        transform-origin: left;
+      }
+
+      .burger input:checked ~ span:nth-child(3) {
+        transform: scale(0.1);
+        transition: all 0.5s ease;
+        opacity: 0;
+      }
+
+      .burger input:checked ~ span:nth-child(4) {
+        transform: rotate(-43deg);
+        transform-origin: left;
+      }
+
+
+      /* SAMPING */ 
+
+      .samping {
+        display: none;
+        width: 100%;
+        position: absolute;
+        transform: translateX(400px);
+        transition: all 0.5s ease;
+      }
+
+      .samping-1 {
+        width: 110%;
+      }
+
+      .samping-1 li {
+        width: 100%;
+        background-color: #e78f92;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+     .samping.keluar {
+        transform: translateX(0px);
+      }
+
+      
+

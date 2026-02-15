@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>experience</title>
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+        scrollbar-width: none;
+      }
+
+      body {
+        margin: 30px;
+        box-sizing: border-box;
+        background: linear-gradient(120deg, #ec7b7f 0%, #fad0c4 100%);
+      }
+
+      .container {
+        position: relative;
+        width: 70%;
+        margin: 50px auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+        padding: 20px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 20px;
+      }
+
+      /* CONTENT-1 */
+      .content-1 {
+        place-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .content-1 h2 {
+        position: absolute;
+        transform: translate(-428px, -100px);
+      }
+
+      .content-1 p {
+        width: 80%;
+      }
+
+      .content-1 img {
+        width: 50%;
+        height: 40vh;
+      }
+
+      /* CONTENT-2 */
+      .content-2 {
+        place-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .content-2 h2 {
+        position: absolute;
+        transform: translate(360px, -60px);
+      }
+
+      .content-2 p {
+        transform: translate(-50px, 20px);
+        text-align: right;
+        width: 80%;
+      }
+
+      .content-2 img {
+        order: -1;
+        width: 75%;
+        height: 40vh;
+      }
+
+      .utama {
+        width: 60%;
+        height: 20vh;
+        background-color: violet;
+      }
+
+      h4 {
+        padding-top: 60px;
+        text-align: center;
+      }
+
+      /* RESPONSIVE */
+
+      @media (max-width: 500px) {
+        h2 {
+          transform: translate(0, 0);
+        }
+
+        .content-1 {
+          grid-template-rows: repeat(2, 60%);
+        }
+
+        .content-2 {
+          grid-template-rows: repeat(2, 60%);
+        }
+
+        .container {
+          width: 100%;
+          box-shadow: none;
+        }
+
+        .content-1 img {
+          order: -1;
+          width: 70vw;
+        }
+
+        .container .h4 {
+          position: absolute;
+          background-color: rgb(56, 23, 23);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-1">
+        <h2>casier</h2>
+        <p>
+          Menyusun laporan transaksi harian. <br />
+          Bertanggung jawab untuk mengelola uang tunai, memastikan akurasi dalam
+          proses penyimpanan dan perhitungan. Memberikan layanan pelanggan yang
+          ramah dan profesional, menjawab pertanyaan, dan menangani keluhan
+          dengan baik. Menghimpun puluhan transaksi pasien secara tunai, debit
+          atau transfer dengan akurat. Melakukan cek kesesuaian inputan,
+          memvalidasi dan memproses pembayaran.
+        </p>
+        <img src="img_2/dewi-sri.jpg" alt="gambar-kamu" />
+      </div>
+
+      <div class="content-2">
+        <h2>casemix</h2>
+        <p>
+          melakukan verifikasi kelengkapan data pasien rawat jalan merapikan
+          berkas pada pasien untuk melakukan penagihan kepada perusahaan
+          mengecek ulang data pasien rawat jalan yang sudah terkumpul dari
+          setiap bagian untuk di input
+        </p>
+        <img src="img_2/pengalaman.jpg" alt="gambar-kamu" />
+      </div>
+      <h4><a href="container.html">go back</a></h4>
+    </div>
+  </body>
+</html>
